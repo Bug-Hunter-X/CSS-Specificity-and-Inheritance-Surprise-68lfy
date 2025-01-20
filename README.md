@@ -1,0 +1,3 @@
+# CSS Specificity and Inheritance Surprise
+
+This repository demonstrates an uncommon CSS issue related to specificity and inheritance.  The `bug.css` file contains the problematic code. The `bugSolution.css` file illustrates how to fix this problem and explains the unexpected behavior.  This issue highlights the importance of understanding how CSS specificity and inheritance interact, especially when dealing with nested selectors.
