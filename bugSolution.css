@@ -1,0 +1,35 @@
+To solve this issue and make the CSS behavior more predictable, we can use the `!important` flag (though this should be used sparingly) or restructure the CSS for clarity:
+
+**Method 1: Using `!important` (Use cautiously):**
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red !important; /* Force p to be red regardless of other rules */
+}
+
+div p {
+  color: green;
+}
+```
+
+**Method 2: Restructuring CSS for Clarity:**
+
+```css
+div {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+.specific-paragraph {
+  color: green; /* More descriptive selector */
+}
+```
+
+Then, use the class `specific-paragraph` where you need the green color. This approach is generally preferred because it enhances readability and maintainability.
